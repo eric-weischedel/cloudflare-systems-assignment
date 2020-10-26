@@ -111,7 +111,7 @@ func main() {
 	fmt.Println("Slowest time:", durations[*profileFlag-1])
 	fmt.Println("Mean time:", time.Duration(total/int64(*profileFlag)))
 	fmt.Println("Median time:", durations[*profileFlag/2])
-	fmt.Println("Percentage succeeded:", ((*profileFlag-errorCount) / *profileFlag)*100)
+	fmt.Println("Percentage succeeded:", (float32(*profileFlag-errorCount)/float32(*profileFlag))*100)
 	fmt.Println("Error codes:", errorCodes)
 	fmt.Println("Smallest response (in bytes):", lengths[0])
 	fmt.Println("Largest response (in bytes):", lengths[*profileFlag-1])
