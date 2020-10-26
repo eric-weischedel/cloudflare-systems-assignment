@@ -117,5 +117,4 @@ func main() {
 	fmt.Println("Error codes:", errorCodes)
 	fmt.Println("Smallest response (in bytes):", lengths[0])
 	fmt.Println("Largest response (in bytes):", lengths[*profileFlag-1])
-
 }
