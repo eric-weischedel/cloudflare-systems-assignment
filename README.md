@@ -2,9 +2,7 @@
 
 A CLI to make HTTP requests to a given endpoint and profile the server's performance.
 
-<br>
-
-## Usage
+## Running
 
 1. Install [Go](https://golang.org/doc/install)
 
@@ -14,8 +12,6 @@ A CLI to make HTTP requests to a given endpoint and profile the server's perform
 go run main.go <options>
 ```
 
-<br>
-
 ## Options
 
 | Flag        | Argument? | Description                              |
@@ -24,15 +20,11 @@ go run main.go <options>
 | `--url`     | string    | Specifies the URL to send the request to |
 | `--profile` | int       | Specifies the number of requests to make |
 
-<br>
-
 ## Example
 
 ![Cloudflare screenshot](./screenshots/screenshot_cloudflare.PNG)
 
-<br>
-
-## Comparing Results Among Popular Sites
+## Testing Popular Sites
 
 I ran this tool against several web APIs, running 1,000 requests for each one. All APIs tested return a small amount of JSON data.
 
