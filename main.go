@@ -39,6 +39,8 @@ func makeRequest(url url.URL) (time.Duration, int, int) {
 		log.Fatal(writeError)
 	}
 
+	endingTime := time.Now()
+
 	response, err := ioutil.ReadAll(connection)
 	if err != nil {
 		log.Fatal(err)
@@ -54,7 +56,7 @@ func makeRequest(url url.URL) (time.Duration, int, int) {
 
 	connection.Close()
 
-	return time.Now().Sub(beginningTime), len(response), code
+	return endingTime.Sub(beginningTime), len(response), code
 }
 
 func main() {
