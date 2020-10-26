@@ -28,9 +28,7 @@ go run main.go <options>
 
 I ran this tool against several websites, running 30 requests for each one. The results are sorted by median time ascending.
 
-<br>
-
-| Endpoint           | Median Time | Fastest Time | Slowest Time |
+| Site               | Median Time | Fastest Time | Slowest Time |
 | ------------------ | ----------- | ------------ | ------------ |
 | Facebook           | 14.5307ms   | 13.5735ms    | 34.9535ms    |
 | YouTube            | 15.0018ms   | 13.753ms     | 26.0276ms    |
